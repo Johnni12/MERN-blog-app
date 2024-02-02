@@ -35,7 +35,7 @@ const DUMMY_POSTS = [
   },
   {
     id: '4',
-    thumbnail: Thumbnail4,
+    thumbnail: Thumbnail1,
     category: 'science',
     title: 'This is the very fourth post on this blog',
     desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, ut? Necessitatibus reprehenderit rerum nam quasi vero magni quas veniam praesentium.',
