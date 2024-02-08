@@ -1,5 +1,7 @@
 import React from 'react'
 import PostAuthor from '../components/PostAuthor'
+import { Link } from 'react-router-dom'
+import Thumbnail from '../images/blog101.jpg'
 
 const PostDetail = () => {
   return (
@@ -8,10 +10,10 @@ const PostDetail = () => {
         <div className='post-detail__header'>
           <PostAuthor />
           <div className='post-detail__buttons'>
-            <Link to={'/posts/viewer/edit'} className='btn sm primary'>
+            <Link to={`/posts/viewer/edit`} className='btn sm primary'>
               Edit
             </Link>
-            <Link to={'/posts/viewer/delete'} className='btn sm danger'>
+            <Link to={`/posts/viewer/delete`} className='btn sm danger'>
               Delete
             </Link>
           </div>
