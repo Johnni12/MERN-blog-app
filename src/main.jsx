@@ -13,7 +13,7 @@ import Register from './pages/Register'
 import UserProfile from './pages/UserProfile'
 import CreatePost from './pages/CreatePost'
 import EditPost from './pages/EditPost'
-import AuthorPost from './pages/AuthorPosts'
+import AuthorPosts from './pages/AuthorPosts'
 import CategoryPosts from './pages/CategoryPosts'
 import Dashboard from './pages/Dashboard'
 
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       { path: 'authors', element: <Authors /> },
       { path: 'create', element: <CreatePost /> },
       { path: 'posts/categories/:category', element: <CategoryPosts /> },
-      { path: 'posts/users/:id', element: <AuthorPost /> },
+      { path: 'posts/users/:id', element: <AuthorPosts /> },
       { path: 'myposts/:id', element: <Dashboard /> },
       { path: 'posts/:id/edit', element: <EditPost /> },
       { path: 'logout', element: <Logout /> },
