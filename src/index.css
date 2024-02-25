@@ -265,6 +265,13 @@ footer {
   margin-top: 2rem;
 }
 
+.post__author{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
 .post__author-avater {
   width: 2.5rem;
   aspect-ratio: 1/1;
