@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.snow.css'
 
 const CreatePost = () => {
   const [title, setTitle] = useState('')
@@ -47,7 +49,7 @@ const CreatePost = () => {
   ]
 
   return (
-    <div className='create-post'>
+    <section className='create-post'>
       <div className='container'>
         <h2>Create Post</h2>
         <p className='form__error-message'>This is an error message</p>
@@ -65,12 +67,27 @@ const CreatePost = () => {
             onChange={(e) => setCategory(e.target.value)}
           >
             {POST_CATEGORIES.map((cat) => (
-              <option>{cat}</option>
+              <option key={cat}>{cat}</option>
             ))}
           </select>
+          <ReactQuill
+            modules={modules}
+            formats={formats}
+            value={description}
+            onChange={setDescription}
+          />
+          <input
+            type='file'
+            onChange={(e) => setThumbnail(e.target.files[0])}
+            accept='png,jpeg,jpg'
+          />
+
+          <button type='submit' className='btn primary'>
+            Create
+          </button>
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 
