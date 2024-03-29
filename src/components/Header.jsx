@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../images/logo.png'
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
 
 const Header = () => {
+ const [isOpen, setIsOpen] = useState()
   return (
+    
     <nav>
       <div className='container nav__container'>
         <Link to='/' className='nav__logo'>
